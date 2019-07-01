@@ -11,7 +11,8 @@ const routes: Routes = [
       users: UsersResolver,
       paginationInfo: PaginationResolver
     },
-    component: UsersListComponent
+    component: UsersListComponent,
+    runGuardsAndResolvers: 'always'
   }
 ];
 

@@ -19,3 +19,9 @@ in instruction to angular material
 ## Service is mapped incorrectly
 (fetchUserById) - adjust typings and result
 also needs error handling
+
+## Paging is not working
+runGuardsAndResolvers: 'always'
+for routing module
+
+
