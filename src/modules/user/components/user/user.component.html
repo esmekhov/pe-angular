@@ -1,3 +1,4 @@
-<button (click)="back()">Back</button>
-
-<app-user-data [user]="user"></app-user-data>
+<mat-toolbar class="user-toolbar">
+  <button mat-button (click)="back()">Back</button>
+</mat-toolbar>
+<app-user-data class="user-container" [user]="user"></app-user-data>

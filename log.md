@@ -3,7 +3,7 @@
 ## send to
 stephanie.von.platen@payever.org 
 
--- Meeting started (15:30)
+-- Meeting started (15:30), all timestamps local (MSK)
 
 # Issues
 ## Took 30 minutes to install project
@@ -46,3 +46,17 @@ page info is not required, every page is supplied with information
 (even if it's wrong)
 
 redid users service to fetch page
+removed extra services and resolvers
+
+## Table is styled incorrectly (not full width), started 17:20
+Set css for component (width 100%)
+
+## Card is not styled, started 17:22
+Copied card template from angular material and adjusted
+
+## User data shows a console error, started 17:30
+Added ngIf to stop trying to display component
+
+## Toolbar with back button is not styled, started 17:35
+
+
