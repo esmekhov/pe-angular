@@ -32,11 +32,7 @@ runGuardsAndResolvers: 'always'
 for routing module
 
 ## HTTP is outdated for angular
-wontfix - not during timerace
-do plan after release
-
-## Core module is inited twice
-Sorry, no idea
+resolved later
 
 ## Paging is stuck with wrong page during first load
 
@@ -58,5 +54,24 @@ Copied card template from angular material and adjusted
 Added ngIf to stop trying to display component
 
 ## Toolbar with back button is not styled, started 17:35
+Added styles from material, imported toolbar
 
+## Basic error handling, started 17:45
+Failed - time limit is up (18:10)
+(added handlers to the service, but not to client-facing code)
+Refactored obsolete http client
 
+## Removed extra core module import
+(when finishing this report, 18:10)
+also removed init by function call
+
+# Known issues to resolve, if there was more time
+* Error handling is basically non-existent
+* Data is not cached - maybe storage would do nicely
+* Tests are non-existent
+* Animations/spinners are non-existent for table (user has one, but it's not much)
+
+# Personal opinion
+This was a nice task, even if I was too slow to complete it.
+Not everyone who uses Angular is familiar with default Angular Material library,
+development environment specifications _must_ be sent before the task (see node_sass problem).

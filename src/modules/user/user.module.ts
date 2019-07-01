@@ -6,23 +6,21 @@ import { UserComponent } from './components/user/user.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
 import {
   MatButtonModule,
-  MatCardModule,
-  MatProgressSpinner,
-  MatToolbar
+  MatCardModule, MatProgressSpinnerModule, MatToolbarModule,
 } from '@angular/material';
 
 @NgModule({
   declarations: [
     UserComponent,
     UserDataComponent,
-    MatProgressSpinner,
-    MatToolbar,
   ],
   imports: [
     CommonModule,
     UserRoutingModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ]
 })
 export class UserModule { }
