@@ -1,3 +1,10 @@
+# Working log
+
+## send to
+stephanie.von.platen@payever.org 
+
+-- Meeting started (15:30)
+
 # Issues
 ## Took 30 minutes to install project
 node-sass requires --unsafe-perm to run post-script
@@ -24,4 +31,18 @@ also needs error handling
 runGuardsAndResolvers: 'always'
 for routing module
 
+## HTTP is outdated for angular
+wontfix - not during timerace
+do plan after release
 
+## Core module is inited twice
+Sorry, no idea
+
+## Paging is stuck with wrong page during first load
+
+-- meeting ended here -- (16:50)
+
+page info is not required, every page is supplied with information
+(even if it's wrong)
+
+redid users service to fetch page

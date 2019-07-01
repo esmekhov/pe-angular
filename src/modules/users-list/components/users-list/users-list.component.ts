@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PageEvent } from '@angular/material';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs/operators';
-import { UserInterface } from '../../../../interfaces';
-import { ApiService } from '../../../core/services';
+import {Page, UserInterface} from '../../../../interfaces';
 
 @Component({
   selector: 'app-users-list',
@@ -14,7 +13,7 @@ export class UsersListComponent implements OnInit {
 
   displayedColumns = ['first_name', 'last_name', 'email'];
   userList: any[] = [];
-  pagesCount: number;
+  page: Page<UserInterface>;
 
   constructor(private activatedRoute: ActivatedRoute,
               private router: Router) {
@@ -24,15 +23,9 @@ export class UsersListComponent implements OnInit {
     this.activatedRoute.data.pipe(
       map(data => data.users)
     )
-      .subscribe((users: UserInterface[]) => {
-        this.userList = users;
-      });
-
-    this.activatedRoute.data.pipe(
-      map(data => data.paginationInfo)
-    )
-      .subscribe(paginationInfo => {
-        this.pagesCount = paginationInfo.total;
+      .subscribe((users: Page<UserInterface>) => {
+        this.page = users;
+        this.userList = this.page.data;
       });
   }
 
