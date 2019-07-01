@@ -1,1 +1,5 @@
-<div>{{ user | json }}</div>
+<mat-card>
+  <h2 mat-card-title>{{user.first_name}} {{user.last_name}}</h2>
+  <img mat-card-image src="{{user.avatar}}" />
+  <a href="mailto:{{user.email}}">Send a letter</a>
+</mat-card>
